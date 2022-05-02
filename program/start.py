@@ -57,11 +57,11 @@ async def start_(client: Client, message: Message):
         photo=f"{Ho_Mk_TR}",
         caption=f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
 🤖 **[𝐌𝐔𝐒𝐈𝐂 🎵](https://t.me/VFF35) **
-**★ انا اسمي كوبرا استطيع تشغيل الاغاني ولفيديوهات في المكالمه الصوتيه**
+**※ انا اسمي كوبرا استطيع تشغيل الاغاني ولفيديوهات في المكالمه الصوتيه**
 
-★ لتعرف شلون تشغلني وتعرف على الاوامر انقر على زر اوامر التشغيل  📚  !
+※ لتعرف شلون تشغلني وتعرف على الاوامر انقر على زر اوامر التشغيل  📚  !
 
-**★ طريقة تفعيلي بكروبك ازا ماتعرف انقر على  » ❓طريقة التفعيل !**
+**※ طريقة تفعيلي بكروبك ازا ماتعرف انقر على  » ❓طريقة التفعيل !**
 
 **البوت معرب بل كامل كل الشكر لمستخدمين بوتات سورس كوبرا**
 """,
@@ -69,31 +69,31 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "★ مبرمج السورس ★",
+                        "※ مبرمج السورس ※",
                         url=f"https://t.me/QABNADLIB",
                     )
                 ],
                 [
-                    InlineKeyboardButton("★ تواصل المحظورين ★", url=f"https://t.me/sdaasfs_bot"),
-                    InlineKeyboardButton("★ مساعد المبرمج ★", url=f"https://t.me/Silawy112"),
+                    InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/sdaasfs_bot"),
+                    InlineKeyboardButton("※ مساعد المبرمج ※", url=f"https://t.me/Silawy112"),
                 ],
-                [InlineKeyboardButton("★ قناة الشروحات ★", url=f"https://t.me/VFF34")],
-                [InlineKeyboardButton("★❓ طريقة التفعيل ★", callback_data="cbhowtouse")],
-                [InlineKeyboardButton("★  الاوامر بالعربي ★", callback_data="cbvamp")],                 
+                [InlineKeyboardButton("※ قناة الشروحات ※", url=f"https://t.me/VFF34")],
+                [InlineKeyboardButton("※❓ طريقة التفعيل ※", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("※ الاوامر بالعربي ※", callback_data="https://t.me/VFF34/17")],                 
                 [
-                    InlineKeyboardButton("★ 📚 اوامر التشغيل ★ ", callback_data="cbcmds"),
-                    InlineKeyboardButton("★ لتنصيب مدفوع ★", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("※ 📚 اوامر التشغيل ※", callback_data="cbcmds"),
+                    InlineKeyboardButton("※ لتنصيب مدفوع ※", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "★ جروب البوت ★", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "※ جروب البوت ※", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "★ قناة البوت ★", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "※ قناة البوت ※", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
-                    InlineKeyboardButton("★ اضافه البوت اللي مجموعتك ★", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("※ اضافه البوت اللي مجموعتك ※", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
             ]
         ),
@@ -111,22 +111,22 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                [
-                InlineKeyboardButton("★ مبرمج السورس ★", url=f"https://t.me/QABNADLIB"),
-                InlineKeyboardButton("★ تواصل المحظورين ★", url=f"https://t.me/sdaasfs_bot"),
+                InlineKeyboardButton("※ مبرمج السورس ※", url=f"https://t.me/QABNADLIB"),
+                InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/sdaasfs_bot"),
             ],
-                [InlineKeyboardButton("★ مساعد المبرمج ★", url=f"https://t.me/Silawy112"),],
+                [InlineKeyboardButton("※ مساعد المبرمج ※", url=f"https://t.me/Silawy112"),],
                 [       
                     InlineKeyboardButton(
-                        "★ قناة الشروحات ★", url=f"https://t.me/VFF34"
+                        "※ قناة الشروحات ※", url=f"https://t.me/VFF34"
                     ),
                 ],
                 [
-                    InlineKeyboardButton("★ اضافه البوت اللي مجموعتك ★", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("※ اضافه البوت اللي مجموعتك ※", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
         ]
     ) 
 
-    alive = f"**★ اهلا بك يا  {message.from_user.mention()}   \n ★ في بوت الاغاني الخاص بسورس كوبرا يمكنك تنصيب بوت بل مثل اشتراك شهري $5 تواصل مع مبرمج السورس ** "
+    alive = f"**※ اهلا بك يا  {message.from_user.mention()}   \n ※ في بوت الاغاني الخاص بسورس كوبرا يمكنك تنصيب بوت بل مثل اشتراك شهري $5 تواصل مع مبرمج السورس ** "
 
     await message.reply_photo(
         photo=f"https://telegra.ph/file/8dd5ef5b8ea6b2f4dbe95.jpg",
@@ -139,20 +139,20 @@ async def alive(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/8dd5ef5b8ea6b2f4dbe95.jpg",
-        caption=f"""**★ مطورين سورس البوت 🎵**""",
+        caption=f"""**※ مطورين سورس البوت 🎵**""",
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("★ مبرمج السورس ★", url=f"https://t.me/QABNADLIB"),
+                InlineKeyboardButton("※ مبرمج السورس ※", url=f"https://t.me/QABNADLIB"),
             ],
             [
-                InlineKeyboardButton("★ تواصل المحظورين ★", url=f"https://t.me/sdaasfs_bot"),
+                InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/sdaasfs_bot"),
             ],
             [
-                InlineKeyboardButton("★ مساعد المبرمج ★", url=f"https://t.me/Silawy112"),
+                InlineKeyboardButton("※ مساعد المبرمج ※", url=f"https://t.me/Silawy112"),
             ],
             [
-                InlineKeyboardButton("★ قناة الشروحات ★", url=f"https://t.me/VFF34"),
+                InlineKeyboardButton("※ قناة الشروحات ※", url=f"https://t.me/VFF34"),
             ]
          ]
      )
@@ -163,21 +163,21 @@ async def help(client: Client, message: Message):
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/e68855e3be3191ca84624.jpg",
-        caption=f"""**★ ها هي الاوامر  الكامله بالعربي ★ \n\n✦┅━╍━╍╍━━╍━━╍━┅✦\n★ تشغيل + 「اسم الأغنية او / رابط」تشغيل الصوت  mp3\n\n★ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .\n\n★ فيديو + لينك + | جودة < 360 - 480- 720 >| » » تشغيل فيديو مباشر من يوتيوب .\n\n★ اسكت او انهاء » »  لايقاف التشغيل .\n\n★ مؤقتا » » ايقاف التشغيل موقتآ  .\n\n★ كمل  » »  استئناف التشغيل  .\n\n★ تخطي » » تخطي الئ التالي  .\n\n★  كتم او سكوت  » »   لكتم البوت .\n\n★ الغاء الكتم » »  لرفع كتم البوت  .\n\n★ الانتظار » » تظهر لك قائمة التشغيل .\n\n★ تنزيل + اسم فيديو » » لتحميل فيديوهات من يوتيوب .\n\n★ تحميل  + اسم اغنية  » لتحميل اغاني mP3 من يوتيوب .\n\n★ لمعرفة المزيد من الاوامر ادخل علي البوت .\n\n✦┅━╍━╍╍━━╍━━╍━┅✦**""",
+        caption=f"""**※ ها هي الاوامر  الكامله بالعربي ※ \n\n✦┅━╍━╍╍━━╍━━╍━┅✦\n※ تشغيل + 「اسم الأغنية او / رابط」تشغيل الصوت  mp3\n\n※ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .\n\n※ فيديو + لينك + | جودة < 360 - 480- 720 >| » » تشغيل فيديو مباشر من يوتيوب .\n\n※ اسكت او انهاء » »  لايقاف التشغيل .\n\n※ مؤقتا » » ايقاف التشغيل موقتآ  .\n\n※ كمل  » »  استئناف التشغيل  .\n\n※ تخطي » » تخطي الئ التالي  .\n\n※  كتم او سكوت  » »   لكتم البوت .\n\n※ الغاء الكتم » »  لرفع كتم البوت  .\n\n※ الانتظار » » تظهر لك قائمة التشغيل .\n\n※ تنزيل + اسم فيديو » » لتحميل فيديوهات من يوتيوب .\n\n※ تحميل  + اسم اغنية  » لتحميل اغاني mP3 من يوتيوب .\n\n※ لمعرفة المزيد من الاوامر ادخل علي البوت .\n\n✦┅━╍━╍╍━━╍━━╍━┅✦**""",
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("★ مبرمج السورس ★", url=f"https://t.me/QABNADLIB"),
-                InlineKeyboardButton("★ تواصل المحظورين ★", url=f"https://t.me/sdaasfs_bot"),
+                InlineKeyboardButton("※ مبرمج السورس ※", url=f"https://t.me/QABNADLIB"),
+                InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/sdaasfs_bot"),
             ],
-            [InlineKeyboardButton("★ مساعد المبرمج ★", url=f"https://t.me/Silawy112"),],
+            [InlineKeyboardButton("※ مساعد المبرمج ※", url=f"https://t.me/Silawy112"),],
             [
                 InlineKeyboardButton(
-                    "★ قناة الشروحات ★", url=f"https://t.me/VFF34"
+                    "※ قناة الشروحات ※", url=f"https://t.me/VFF34"
                 ),
             ],
             [
-                InlineKeyboardButton("★ اضافه البوت اللي مجموعتك ★", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                InlineKeyboardButton("※ اضافه البوت اللي مجموعتك ※", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
          ]
      )
