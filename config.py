@@ -1,4 +1,4 @@
-import os
+﻿import os
 from os import getenv
 from dotenv import load_dotenv
 Ho_Mk_TR = getenv("Ho_Mk_TR")
@@ -21,9 +21,10 @@ GROUP_SUPPORT = getenv("GROUP_SUPPORT", "faqek")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "VFF35")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ف ب غ س ك و م ا ت / ! .").split())
-ALIVE_IMG = getenv("ALIVE_IMG", "https://telegra.ph/file/8dd5ef5b8ea6b2f4dbe95.jpg")
+ALIVE_IMG = getenv("ALIVE_IMG", "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/cobarsyr/Music")
-IMG_1 = getenv("IMG_1", "https://telegra.ph/file/c83b000f004f01897fe18.png")
-IMG_2 = getenv("IMG_2", "https://telegra.ph/file/c83b000f004f01897fe18.png")
-IMG_3 = getenv("IMG_3", "https://telegra.ph/file/c83b000f004f01897fe18.png")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/byffyyffu/Music")
+IMG_1 = getenv("IMG_1", "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg")
+IMG_2 = getenv("IMG_2", "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg")
+IMG_3 = getenv("IMG_3", "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg")
+

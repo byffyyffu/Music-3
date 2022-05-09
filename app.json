@@ -1,16 +1,16 @@
-{
+﻿{
     "name": "Video x Music Stream Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/c0b6ab227c1f7e907eb90.jpg",
+    "logo": "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/QABNADLIB",
-    "repository": "https://github.com/cobarsyr/Music",
-    "success_url": "https://t.me/VFF35",
+    "website": "https://t.me/Mohmad990754",
+    "repository": "https://github.com/byffyyffu/Music-3",
+    "success_url": "https://t.me/EITHON",
     "env": {
         "API_ID": {
             "description": "قم بوضع الايبي ايدي هنا",
@@ -47,12 +47,12 @@
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "QABNADLIB"
+            "value": "Mohmad990754"
         },
         "UPDATES_CHANNEL": {
             "description": "قناتك",
             "required": true,
-            "value": "VFF35"
+            "value": "EITHON"
         },
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
@@ -61,13 +61,13 @@
         },
          "Ho_Mk_TR": {
             "description": "صوره البوت",
-            "value": "https://telegra.ph/file/e68855e3be3191ca84624.jpg",
+            "value": "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
             "required": true
          },      
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
             "required": true,
-            "value": "𝐒𝐈𝐅 𝐂𝐎𝐁𝐑𝐀"
+            "value": "EITHON OWNER"
         }
     },
     "addons": [],
@@ -90,3 +90,4 @@
     },
     "stack": "container"
 }
+
