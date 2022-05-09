@@ -1,4 +1,4 @@
-from pyrogram import Client, errors
+﻿from pyrogram import Client, errors
 from pyrogram.types import (
     InlineQuery,
     InlineQueryResultArticle,
@@ -12,7 +12,7 @@ async def inline(client: Client, query: InlineQuery):
     answers = []
     search_query = query.query.lower().strip().rstrip()
 
-    if search_query == "":
+    if search_query == "بحث":
         await client.answer_inline_query(
             query.id,
             results=answers,
@@ -46,3 +46,4 @@ async def inline(client: Client, query: InlineQuery):
                 switch_pm_text="خطاء:انتهت مهلة البحث",
                 switch_pm_parameter="",
             )
+

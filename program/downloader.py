@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By Amor Music-Project
+﻿# Copyright (C) 2021 By Amor Music-Project
 
 from __future__ import unicode_literals
 
@@ -87,7 +87,7 @@ def song(_, message):
 
 
 @Client.on_message(
-    command(["يديو", f"vsong@{bn}", "vsong", f"video@{bn}"]) & ~filters.edited
+    command(["فيديو", f"vsong@{bn}", "vsong", f"video@{bn}"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
@@ -135,7 +135,7 @@ async def vsong(client, message):
         print(e)
 
 
-@Client.on_message(command(["لكلمات", "لمات", "lyric", f"lyric@{bn}"]))
+@Client.on_message(command(["كلمات", "لمات", "lyric", f"lyric@{bn}"]))
 async def lyrics(_, message):
     try:
         if len(message.command) < 2:
@@ -150,3 +150,4 @@ async def lyrics(_, message):
         await rep.edit(result)
     except Exception:
         await rep.edit("❌ **لم يتم العثور على نتائج كلمات غنائية**\n\n» **يرجى إعطاء اسم أغنية صالح**")
+

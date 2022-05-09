@@ -1,4 +1,4 @@
-from datetime import datetime
+﻿from datetime import datetime
 from sys import version_info
 from time import time
 
@@ -57,29 +57,29 @@ async def start_(client: Client, message: Message):
         photo=f"{Ho_Mk_TR}",
         caption=f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
 🤖 **[𝐌𝐔𝐒𝐈𝐂 🎵](https://t.me/VFF35) **
-**※ انا اسمي كوبرا استطيع تشغيل الاغاني ولفيديوهات في المكالمه الصوتيه**
+**※ انا اسمي ايثون استطيع تشغيل الاغاني ولفيديوهات في المكالمه الصوتيه**
 
 ※ لتعرف شلون تشغلني وتعرف على الاوامر انقر على زر اوامر التشغيل  📚  !
 
 **※ طريقة تفعيلي بكروبك ازا ماتعرف انقر على  » ❓طريقة التفعيل !**
 
-**البوت معرب بل كامل كل الشكر لمستخدمين بوتات سورس كوبرا**
+**البوت معرب بل كامل كل الشكر لمستخدمين بوتات سورس ايثون**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
                         "※ مبرمج السورس ※",
-                        url=f"https://t.me/QABNADLIB",
+                        url=f"https://t.me/Mohmad990754",
                     )
                 ],
                 [
-                    InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/sdaasfs_bot"),
-                    InlineKeyboardButton("※ مساعد المبرمج ※", url=f"https://t.me/Silawy112"),
+                    InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/EITHONTbot"),
+                    InlineKeyboardButton("※ لشراء بوت※", url=f"https://t.me/Mohmad990754"),
                 ],
-                [InlineKeyboardButton("※ قناة الشروحات ※", url=f"https://t.me/VFF34")],
+                [InlineKeyboardButton("※ قناة الشروحات ※", url=f"https://t.me/EITH_5")],
                 [InlineKeyboardButton("※❓ طريقة التفعيل ※", callback_data="cbhowtouse")],
-                [InlineKeyboardButton("※ الاوامر بالعربي ※", callback_data="https://t.me/VFF34/17")],                 
+                [InlineKeyboardButton("※ الاوامر بالعربي ※", callback_data="https://t.me/EITH_5/7")],                 
                 [
                     InlineKeyboardButton("※ 📚 اوامر التشغيل ※", callback_data="cbcmds"),
                     InlineKeyboardButton("※ لتنصيب مدفوع ※", url=f"https://t.me/{OWNER_NAME}"),
@@ -101,7 +101,7 @@ async def start_(client: Client, message: Message):
 
 
 @Client.on_message(
-    command(["برمج السورس" ,"ؤمن" ,"ورس", "alive", "لسورس", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["مبرمج السورس" ,"ؤمن" ,"ورس", "alive", "لسورس", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
@@ -111,13 +111,13 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                [
-                InlineKeyboardButton("※ مبرمج السورس ※", url=f"https://t.me/QABNADLIB"),
-                InlineKeyboardButton("※ تواصل المحظورين ※", url=f"https://t.me/sdaasfs_bot"),
+                InlineKeyboardButton("※ مبرمج السورس ※", url=f"https://t.me/Mohmad990754"),
+                InlineKeyboardButton("※ بوت التواصل ※", url=f"https://t.me/EITHONTbot"),
             ],
-                [InlineKeyboardButton("※ مساعد المبرمج ※", url=f"https://t.me/Silawy112"),],
+                [InlineKeyboardButton("※ لشراء بوت ※", url=f"https://t.me/Mohmad990754"),],
                 [       
                     InlineKeyboardButton(
-                        "※ قناة الشروحات ※", url=f"https://t.me/VFF34"
+                        "※ قناة الشروحات ※", url=f"https://t.me/EITH_5"
                     ),
                 ],
                 [
@@ -126,10 +126,10 @@ async def alive(client: Client, message: Message):
         ]
     ) 
 
-    alive = f"**※ اهلا بك يا  {message.from_user.mention()}   \n ※ في بوت الاغاني الخاص بسورس كوبرا يمكنك تنصيب بوت بل مثل اشتراك شهري $5 تواصل مع مبرمج السورس ** "
+    alive = f"**※ اهلا بك يا  {message.from_user.mention()}   \n ※ في بوت الاغاني الخاص بسورس ايثون يمكنك تنصيب بوت بل مثل اشتراك شهري $5 تواصل مع مبرمج السورس ** "
 
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/8dd5ef5b8ea6b2f4dbe95.jpg",
+        photo=f"https https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
         caption=alive,
         reply_markup=keyboard,
     )
@@ -201,6 +201,7 @@ async def get_uptime(client: Client, message: Message):
         f"• **uptime:** `{uptime}`\n"
         f"• **start time:** `{START_TIME_ISO}`"
     )
+
 
 
 

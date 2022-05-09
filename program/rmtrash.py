@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By VeezMusicProject
+﻿# Copyright (C) 2021 By VeezMusicProject
 
 import os
 from pyrogram import Client, filters
@@ -9,7 +9,7 @@ from driver.decorators import sudo_users_only, errors
 downloads = os.path.realpath("program/downloads")
 raw = os.path.realpath(".")
 
-@Client.on_message(command(["ذف", "clear"]) & ~filters.edited)
+@Client.on_message(command(["نظف", "clear"]) & ~filters.edited)
 @errors
 @sudo_users_only
 async def clear_downloads(_, message: Message):
@@ -22,7 +22,7 @@ async def clear_downloads(_, message: Message):
         await message.reply_text("❌ **no files downloaded**")
 
         
-@Client.on_message(command(["سح", "clean"]) & ~filters.edited)
+@Client.on_message(command(["مسح", "clean"]) & ~filters.edited)
 @errors
 @sudo_users_only
 async def clear_raw(_, message: Message):
@@ -48,3 +48,4 @@ async def cleanup(_, message: Message):
         await message.reply_text("✅ **cleaned**")
     else:
         await message.reply_text("✅ **already cleaned**")
+

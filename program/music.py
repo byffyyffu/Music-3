@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By Amort Music-Project
+﻿# Copyright (C) 2021 By Amort Music-Project
 # Commit Start Date 20/10/2021
 # Finished On 28/10/2021
 
@@ -50,7 +50,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(command(["غل", "شغيل", "ينوم", "ندق", "ودي", "لخديوي", "mplay", f"mplay@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["غل", "تشغيل", "ينوم", "ندق", "ودي", "لخديوي", "mplay", f"mplay@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -376,3 +376,4 @@ async def stream(c: Client, m: Message):
                 except Exception as ep:
                     await suhu.delete()
                     await m.reply_text(f"خطاء: `{ep}`")
+

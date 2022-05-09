@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 from config import BOT_USERNAME, SUDO_USERS
 from driver.decorators import authorized_users_only, sudo_users_only, errors
 from driver.filters import command, other_filters
@@ -42,7 +42,7 @@ async def join_group(client, message):
     )
 
 
-@Client.on_message(command(["userbotleave","ادر",
+@Client.on_message(command(["userbotleave","غادر",
                             f"leave@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def leave_one(client, message):
@@ -57,7 +57,7 @@ async def leave_one(client, message):
         return
 
 
-@Client.on_message(command(["leaveall", "ادر الكل", f"leaveall@{BOT_USERNAME}"]))
+@Client.on_message(command(["leaveall", "غادر الكل", f"leaveall@{BOT_USERNAME}"]))
 @sudo_users_only
 async def leave_all(client, message):
     if message.from_user.id not in SUDO_USERS:
@@ -82,3 +82,4 @@ async def leave_all(client, message):
     await client.send_message(
         message.chat.id, f"✅ Left from: {left} chats.\n❌ Failed in: {failed} chats."
     )
+
